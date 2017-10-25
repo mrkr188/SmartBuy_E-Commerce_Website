@@ -1,0 +1,14 @@
+/**** styles for product ***/
+.product {
+    margin-bottom: 50px;
+}
+.product-media {
+    background: #F7F7F7;
+    overflow: hidden;
+    position: relative;
+    z-index: 40;
+}
+.product-actions, .product-media, .product-media a, .product-slider-main .swiper-slide, .product-soldout, .view-icon {
+    text-align: center;
+}
+/**************************/

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>Shopping Cart Page</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/stylesnavbar.css">
+      <link rel="stylesheet" href="css/pluginsnavbar.css">
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <script type="text/javascript" src="js/bootstrap.min.js"></script>
+      <!-- <script type="text/javascript" src="views/js/productSpecs.js"></script>  -->
+      <script src="js/vendornavbar.js"></script>
+      <script src="js/plugins.js"></script>
+      <script>
+         window.SHOW_LOADING = false;
+      </script>
+   </head>
+   <body><div> <% include navbar.html %></div>
+     <section> <div class="container">
+         <div class="row cols-border">
+            <div class="col-md-6">
+               <div class="product-details-wrapper">
+                  <h2 class="product-name">
+                     <a href="#" class="title"> Shopping Cart</a>
+                  </h2>
+               </div>
+
+                <div role="tabpanel" class="tab-pane" id="product-review">
+                        <% if (orders.length > 0) { %> <h3>Items <span></span></h3>  <% } %> 
+                        <ol class="product-review-list">
+                        <% orders.forEach(function(order) { %>
+                        
+                         <div style="float: right; clear: left;"> <img src="/productimages/5820f30167b3aa34f838cac95496140_sa.jpg" style="te" alt=""></div>
+                           <li>
+                              <h3 class="review-comment"><%= order["cart"]["productName"]%></h3>
+                              
+                              <div class="review-comment">
+                                 
+                              </div>
+                              <div class="review-comment">
+                                 <span>Quantity - </span>
+                                 <a href="#" class="author"><%= order["cart"]["quantity"]%></a>
+                              </div>
+                              <div class="review-comment">
+                                 <span>Price - </span>
+                                 <a href="#" class="author"> <%= order["cart"]["productPrice"]%> </a>
+                              </div>
+                           </li>
+                            <% }); %> 
+                        </ol>
+                  </div>
+                  <% if (orders.length > 0) { %>
+                      <div class="product-list-actions">
+                      <a href="/checkout" >
+                      <button  class="btn btn-lg btn-primary">Proceed to checkout</button>
+                      </a>
+                      </div>
+                 <% } else { %> <div> <h3>No Items in Cart <span></span></h3>
+                  </div> <% } %>
+
+            </div>
+        </div>
+      </div>
+      </section>
+      <footer>
+         <% include footer.html %>
+      </footer>
+   </body>
+</html>

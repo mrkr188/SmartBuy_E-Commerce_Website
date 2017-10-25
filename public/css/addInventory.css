@@ -1,0 +1,67 @@
+/* form styles */
+.well{
+	background-color: white!important;
+	width: 98.7%;
+}
+.alert-message{
+	color: red;
+	padding: 0!important;
+}
+.btn-warning{
+	margin-top: 10px;
+}
+/* styles for rich text editor */
+table.small-editor
+{
+    height: 100px;
+}
+
+table.small-editor iframe.k-content
+{
+    height: 50px; /* 50px less than the Editor height */
+}
+.content-container button span {
+	margin:10%;
+}
+
+.content-container button{
+	/*background: #374148!important;
+	border-color: #374148!important; */
+	/*background: #816263;
+	border-color: #816263;*/
+	background-color: #ffa200;
+	border-radius: 4px;
+	border-color: #ffa200;
+	width: 95px;
+	height: 47px;
+}
+/*
+.content-container button:hover{ background: #816263; border-color: #816263; }*/
+.content-container button.cancel {padding-top: 5px;}
+
+/**** previous images list ****/
+ul.previous-images {
+    list-style: none;
+    padding: 0;
+}
+.previous-images li.image-value {
+    position: relative;
+    border-radius: 4px;
+    padding: 8px 10px;
+    border: solid 1px #e1e1e1;
+}
+.previous-images li:nth-last-child(2) {
+    margin-right: 15px;
+}
+.previous-images li {
+    float: left;
+    margin: 0 10px 10px 0;
+    padding: 8px 0;
+}
+.previous-images .image {
+    display: inline-block;
+    position: relative;
+    top: -1px;
+    margin: 0 8px 0 0;
+}
+/******************************/

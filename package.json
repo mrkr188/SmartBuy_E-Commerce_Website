@@ -1,0 +1,40 @@
+{
+  "name": "group11",
+  "version": "1.0.0",
+  "description": "Final Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samvaity/SE_SmartBuy.git"
+  },
+  "author": "group11",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samvaity/SE_SmartBuy/issues"
+  },
+  "homepage": "https://github.com/samvaity/SE_SmartBuy#readme",
+  "dependencies": {
+    "async": "latest",
+    "bcrypt-nodejs": "latest",
+    "body-parser": "^1.15.2",
+    "chart.js": "^2.4.0",
+    "connect-flash": "0.1.1",
+    "ejs": "0.8.5",
+    "express": "3.4.8",
+    "gridfs-stream": "^1.1.1",
+    "mongoose": "^4.6.5",
+    "multer": "^1.2.0",
+    "nodemailer": "0.7.1",
+    "now": ">=0.0.1",
+    "passport": "0.2.0",
+    "passport-facebook": ">= 0.0.0",
+    "passport-google-oauth": ">= 0.0.0",
+    "passport-local": "0.1.6",
+    "passport-twitter": ">= 0.0.0",
+    "socket.io": "latest",
+    "sort-by": "^1.1.1"
+  }
+}
